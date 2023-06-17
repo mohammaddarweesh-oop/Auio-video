@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantict</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="background-color: rgb(241, 252, 149);">
+    <header>
+        <h1 style="margin-top: 65px;text-transform: capitalize;">Mohammad Darweesh to learn semantic</h1>
+    </header>
+<!--   =================================| Navigation |====================================================   -->
+    
+    
+    <nav style="background-color: rgb(28, 245, 245);text-align: center;position: fixed;top: 0;width: 100%;height: 50px;" >
+        <ul style="padding: 0;margin: 0; display: flex;list-style: none;" >
+            <li ><a href="#sel" style="padding-left: 10px;color: red; text-decoration: none;font-weight: bold;font-size: 22px;" >Home</a></li>
+            <li style="padding-left: 10px;"><a href="#" style="padding-left: 10px;color: red; text-decoration: none;font-weight: bold;font-size: 22px;" >Contact</a></li>
+            <li style="padding-left: 10px;"><a href="#" style="padding-left: 10px;color: red; text-decoration: none;font-weight: bold;font-size: 22px;" >Download</a></li>
+            <li style="padding-left: 10px;"><a href="#"style="padding-left: 10px;color: red; text-decoration: none;font-weight: bold;font-size: 22px;" >Contact</a></li>
+        </ul>
+    </nav>
+<!--   =====================================================================================   -->
+    <hr>
+    <section>
+        <!-- autoplay -->
+        <audio controls loop muted>
+            <source src="media/audio/058.mp3" type="audio/mpeg">
+            not supported browser is audio 
+        </audio>
+
+        <!--Video ====================================================================================================-->
+        <div style="text-align: center; margin: 20px;">
+            <input type="button" onclick="playPause()" value="Play/Pause">
+  
+            <input type="button" onclick="makeBig()" value="Big">
+            <input type="button" onclick="makeSmall()" value="Small">
+            <input type="button" onclick="makeNormal()" value="Normal">
+        </div>
+        <div style="background-color: rgba(10, 10, 10, 0.8); width: 800px; border: 1px solid red;margin-left: 37%;" id="video1" > 
+            <video controls loop muted width="800px" height="500px" style="display: block;" poster="images/R.jpg" preload="metadata">
+                <source src="media/video/Shmeksss Short Video.mp4" type="video/mp4">
+                Your Browser Does Not supported  Video Tag
+                <track srx="myFile.vtt" kind="subtitles" srclang="en" label="English">
+                <track srx="myFile2.vtt" kind="subtitles" srclang="ar" label="Arabic">
+                <i class="fas fa-heart"></i>
+            </video>
+            
+
+        </div>
+        <a href="login.html" target="_blank" style="color: brown;font-size: 28px;text-decoration: none; font-weight: bold; ">Log In</a>
+        <!-- <div style="text-align: center;margin:10px ;">
+            <button onclick="play()" style="height: 30px;">play/pause</button>
+        </div> -->
+        <a href="##"><i class="fab fa-instagram"></i></a>
+        <i class="fab fa-instagram"></i>
+
+    </section>
+    <hr style="margin:30px  0px;">
+    <section id="sel">
+        
+        
+
+        
+
+
+        <p>The <span>&lt;article&gt;</span> element specifies independent, self-contained content.</p>
+        <p>
+            An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+        </p>
+        <p>
+            Examples of where the <span>&lt;article&gt;</span> element can be used:
+        </p>
+        
+        <p>The <code><article></code> element specifies independent, self-contained content.</p>
+    </section>
+    <article>
+        <p>
+            Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents. CSS is used to suggest its presentati
+
+        </p>
+    </article>
+<!--   =====================================================================================   -->
+    <hr>
+
+    <footer style="display: flex;justify-content: space-around;">
+        
+        <figure style="width: 300px;">
+            <img src="images/R.jpg" alt="Fix to iage plese " width="300px" height="200px">
+            <figcaption style="text-align: center;">mohanad daserfd ghfjytyd gffgdtrseraawq mohanad daserfd ghfjytyd gffgdtrseraawq</figcaption>
+        </figure>
+        <figure style="width: 300px;">
+            <img src="images/R.jpg" alt="Fix to iage plese " width="300px" height="200px">
+            <figcaption style="text-align: center;">mohanad daserfd ghfjytyd gffgdtrseraawq mohanad daserfd ghfjytyd gffgdtrseraawq</figcaption>
+        </figure>
+        <figure style="width: 300px;">
+            <img src="images/R.jpg" alt="Fix to iage plese " width="300px" height="200px">
+            <figcaption style="text-align: center;">mohanad daserfd ghfjytyd gffgdtrseraawq mohanad daserfd ghfjytyd gffgdtrseraawq</figcaption>
+        </figure>
+        
+    </footer>
+
+
+    <!-- <script >
+
+        var vedio = document.getElementById("vedio1");
+    
+    
+        function play(){
+            if(vedio.paused){
+                vedio.play;
+            }
+            else{
+                vedio.paused;
+            }
+    }
+        </script> -->
+
+
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function playPause() { 
+              if (myVideo.paused) {
+
+                myVideo.play(); 
+            }
+              else 
+                myVideo.pause(); 
+            } 
+            
+            function makeBig() { 
+                myVideo.width = 560; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 320; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 420; 
+            } 
+        </script>
+
+
+</body>
+</html>
